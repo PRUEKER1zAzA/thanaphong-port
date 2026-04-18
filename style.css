@@ -178,6 +178,7 @@ footer {
     }
 }
 
+
 .event-card {
     background-color: #FFFFFF;
     border-radius: 12px;
@@ -193,7 +194,6 @@ footer {
 
 .event-card:hover {
     transform: translateY(-3px);
-    /* ลอยขึ้นนิดหน่อยเวลาชี้เมาส์ */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 
@@ -204,11 +204,10 @@ footer {
     font-weight: 600;
     text-align: left;
     border-left: 4px solid #111;
-    /* ขีดเส้นนำสายตา */
     padding-left: 12px;
 }
 
-/* ---------- การจัดเรียงรูปภาพในแต่ละการ์ด ---------- */
+/* ---------- Picture in card ---------- */
 .event-gallery {
     display: grid;
     /* จัดให้รูปเรียงต่อกันอัตโนมัติ ขนาดขั้นต่ำ 250px */
@@ -221,14 +220,13 @@ footer {
 .event-gallery img {
     width: 100%;
     height: auto;
-    /* ✅ ให้รูปปรับความสูงตามสัดส่วนจริง (สัดส่วนไม่เพี้ยน ไม่แบน) */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
 .event-gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
     /* ขยายรูปนิดนึงเวลาเอาเมาส์ชี้ */
 }
 
