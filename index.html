@@ -10,10 +10,83 @@
 </head>
 
 <body>
+    <style>
+        .picture-frame {
+            background-color: #ffffff;
+            border-radius: 100%;
+            width: 300px;
+            height: 300px;
+            transition: transform 0.8s ease;
+
+        }
+
+        .picture-profile {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 4px solid #eeeeee;
+            box-shadow: 0 0 30px #2563eb;
+            transition: transform 0.8s ease;
+        }
+
+        .picture-profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 5%;
+        }
+
+        .picture-frame:hover,
+        .picture-profile:hover {
+            box-shadow: 0 0 30px #2563eb;
+            transform: translateY(-5px);
+            transition: 0.8s;
+        }
+
+        .profile-txt {
+            gap: 10px;
+            flex-direction: column;
+            display: flex;
+            text-align: left;
+            transition: transform 0.8s ease;
+        }
+
+        .profile-txt:hover {
+            transform: translateY(-5px);
+            transition: 0.8s;
+        }
+
+        .btn-project {
+            width: auto;
+            color: #eeeeee;
+            background-color: #2563eb;
+            border: 3px solid #2563eb;
+            border-radius: 8px;
+            padding: 14px 24px;
+            font-size: 16px;
+
+        }
+
+        .btn-contact {
+            width: auto;
+            color: #eeeeee;
+            background-color: transparent;
+            border: 3px solid #333333;
+            border-radius: 8px;
+            padding: 14px 24px;
+            font-size: 16px;
+
+        }
+
+    </style>
     <nav>
+        <a href="index.html" style="text-decoration: none;">
+            <h2>Portfolio</h2>
+        </a>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>            
+            <li><a href="about.html">About</a></li>
             <li><a href="education.html">Education</a></li>
             <li><a href="projects-skills.html">Projects & Skills</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -24,51 +97,59 @@
 
     <main class="main-content">
         <header>
-            <h1>Resume</h1>
-            <p>Welcome to my personal space</p>
+            <div class="picture-frame">
+                <div class="picture-profile">
+                    <img src="img/me1.jpg">
+                </div>
+            </div>
+            <div class="profile-txt">
+                <h1>Thanapong</h1>
+                <h1>Khunbomrung</h1>
+                <h2></h2>
+                <p>Welcome to my personal space</p>
+
+                <div>
+                    <a href="projects-skills.html"><button class="btn-project">View Projects →</button></a>
+                    <a href="contact.html"><button class="btn-contact">Contact Me →</button></a>
+                </div>
+            </div>
+            <div class="profile-txt">
+                <pre style="color:#e5e7eb; padding:20px; border-radius:10px; line-height:1.6; box-shadow:0 0 20px rgba(37,99,235,0.3); margin-right: 50px; text-align: left;">
+                        <span style="color:#60a5fa;">function</span> dev_skill() {
+                        <span style="color:#60a5fa;">let</span> skills = [
+                        <span style="color:#34d399;">"HTML"</span>,
+                        <span style="color:#34d399;">"CSS"</span>,
+                        <span style="color:#34d399;">"JavaScript"</span>,
+                        <span style="color:#34d399;">"Python"</span>
+                        ];
+                        <span style="color:#60a5fa;">return</span> skills;
+                        }
+                    </pre>
+                <div>
+
+                </div>
+
         </header>
 
         <section id="resume">
-            <div class="container" style="display: flex; flex-direction: row; gap: 50px; align-items: center;">
-                <div class="image-gallery">
-                    <div class="img-box">
-                        <img src="img/me.png" alt="" style=" border-radius: 12px;">
+            <div class="profile-container" style="display: flex; flex-direction: row; gap: 50px; align-items: center;">
+                <!-- <div class="image-gallery">
+                    <div class="profile-image">
+                        <img src="img/me.png" alt="" style=" border-radius: 100%;  width: 100%;">
                     </div>
-                </div>
+                </div> -->
                 <div class="content" style="display: flex; flex-direction: row; gap: 50px; align-items: center;">
                     <div>
                         <div style="text-align: left; width: auto;">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> <hr style="border: 1px solid #333333;">
 
-        <section>
-            <div class="container">
-                <div style="text-align: left;">
-                    <h2>มัธยมศึกษาปีที่ 3</h2>
-                </div>
-                <div class="img-container">
-                    <div class="img-box">
-                        <img src="img/whitescreen.png" alt="" style=" border-radius: 12px;">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div style="text-align: left;">
-                    <h2>ปวช.3</h2>
-                </div>
-                <div class="img-container">
-                    <div class="img-box">
-                        <img src="img/whitescreen.png" alt="" style=" border-radius: 12px;">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
+
+
 
         <section id="skills">
             <div class="container" style="display: flex; flex-direction: row; gap: 50px; align-items: center;">
@@ -118,7 +199,6 @@
                 </div>
             </div>
         </section>
-        
     </main>
 </body>
 
