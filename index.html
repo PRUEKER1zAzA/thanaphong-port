@@ -5,24 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Tanapong</title>
-    <link rel="icon" type="image/png" href="../img/port_icon.jpg">
+    <link rel="icon" type="image/png" href="img/port_icon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/education.css">
-    <link rel="stylesheet" href="../css/project.css">
-    <script src="../js/navbar.js" defer></script>
-    <script src="../js/education.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/project.css">
+    <script src="js/navbar.js" defer></script>
+    <script src="js/education.js" defer></script>
+    <script src="js/intro.js" defer></script>
 </head>
 
 <body>
+    <div class="intro" id="intro" role="dialog" aria-label="กำลังเปิดพอร์ตโฟลิโอ">
+        <div class="intro-glow"></div>
+        <div class="intro-inner">
+            <p class="intro-kicker">&gt; Starting Portfolio...</p>
+            <h1 class="intro-logo" aria-label="Portfolio"><span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span></h1>
+            <p class="intro-name">ธนพงษ์ ขุนบำรุง PORTFOLIO</p>
+            <div class="intro-track">
+                <div class="intro-bar"></div>
+            </div>
+            <div class="intro-foot">
+                <span class="intro-pct" id="intro-pct">0%</span>
+                <span class="intro-skip">แตะเพื่อข้าม</span>
+            </div>
+        </div>
+    </div>
+
     <div id="navbar"></div>
 
     <main class="main-content">
         <header id="home">
             <div class="picture-frame">
                 <div class="picture-profile">
-                    <img src="../img/me2026.jpg">
+                    <img src="img/me2026.jpg">
                 </div>
             </div>
             <div class="profile-txt">
@@ -33,7 +50,7 @@
                 </div>
                 <div>
                     <div style="display: flex; align-items: center; gap: 8px;">
-                        <h1>Portfolio</h1>
+                        <h1 style="font-family: 'Playfair Display', serif;">P O R T F O L I O</h1>
                     </div>
                     <p>บริหารธุรกิจบัณฑิต (เทคโนโลยีธุรกิจดิจิทัล) บธ.บ. (เทคโนโลยีธุรกิจดิจิทัล)</p>
                     <p>Bachelor of Business Administration Program in Digital Business Technology</p>
@@ -235,7 +252,7 @@
                     <div style="display: flex; flex-direction: column;">
                         <div class="skill-item">
                             <div class="about-icon">
-                                <img src="../img/html_logo.png">
+                                <img src="img/html_logo.png">
                             </div>
                             <div class="skill-bar">
                                 <div class="lv-skill" style="width: 80%;"></div>
@@ -245,7 +262,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="about-icon">
-                                <img src="../img/css_logo.png">
+                                <img src="img/css_logo.png">
                             </div>
                             <div class="skill-bar">
                                 <div class="lv-skill" style="width: 70%;"></div>
@@ -255,7 +272,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="about-icon">
-                                <img src="../img/js_logo.png">
+                                <img src="img/js_logo.png">
                             </div>
                             <div class="skill-bar">
                                 <div class="lv-skill" style="width: 40%;"></div>
@@ -265,7 +282,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="about-icon">
-                                <img src="../img/py_logo.png">
+                                <img src="img/py_logo.png">
                             </div>
                             <div class="skill-bar">
                                 <div class="lv-skill" style="width: 60%;"></div>
@@ -289,7 +306,7 @@
 
                 <div class="edu-item">
                     <div class="edu-badge">
-                        <img src="../img/jvs_logo.png" alt="JVS">
+                        <img src="img/jvs_logo.png" alt="JVS">
                     </div>
                     <div class="edu-body">
                         <span class="edu-level">อนุบาลปีที่ 1 - 3</span>
@@ -302,7 +319,7 @@
 
                 <div class="edu-item">
                     <div class="edu-badge">
-                        <img src="../img/jvs_logo.png" alt="JVS">
+                        <img src="img/jvs_logo.png" alt="JVS">
                     </div>
                     <div class="edu-body">
                         <span class="edu-level">ประถมศึกษาปีที่ 1 - 6</span>
@@ -315,7 +332,7 @@
 
                 <div class="edu-item">
                     <div class="edu-badge">
-                        <img src="../img/jvs_logo.png" alt="JVS">
+                        <img src="img/jvs_logo.png" alt="JVS">
                     </div>
                     <div class="edu-body">
                         <span class="edu-level">มัธยมศึกษาปีที่ 1 - 3</span>
@@ -329,7 +346,7 @@
 
                 <div class="edu-item edu-item-last">
                     <div class="edu-badge">
-                        <img src="../img/htc_logo.png" alt="HTC">
+                        <img src="img/htc_logo.png" alt="HTC">
                         <i class="fa-solid fa-graduation-cap is-hidden"></i>
                     </div>
                     <div class="edu-body">
@@ -353,17 +370,17 @@
                     <p class="rb-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> คลิกที่รูปเพื่อดูฉบับเต็ม</p>
                     <div class="rb-grid">
                         <figure class="rb-card">
-                            <button type="button" class="rb-zoom-btn" data-full="../img/rb_front.jpg"
+                            <button type="button" class="rb-zoom-btn" data-full="img/rb_front.jpg"
                                 data-caption="ใบรบ. — ด้านหน้า" aria-label="ขยายรูปใบรบ.ด้านหน้า">
-                                <img src="../img/rb_front.jpg" alt="ใบรบ.หนัา">
+                                <img src="img/rb_front.jpg" alt="ใบรบ.หนัา">
                                 <span class="rb-zoom-badge"><i class="fa-solid fa-expand"></i></span>
                             </button>
                             <figcaption class="rb-caption">ด้านหน้า</figcaption>
                         </figure>
                         <figure class="rb-card">
-                            <button type="button" class="rb-zoom-btn" data-full="../img/rb_back.jpg"
+                            <button type="button" class="rb-zoom-btn" data-full="img/rb_back.jpg"
                                 data-caption="ใบรบ. — ด้านหลัง" aria-label="ขยายรูปใบรบ.ด้านหลัง">
-                                <img src="../img/rb_back.jpg" alt="ใบรบ.หลัง">
+                                <img src="img/rb_back.jpg" alt="ใบรบ.หลัง">
                                 <span class="rb-zoom-badge"><i class="fa-solid fa-expand"></i></span>
                             </button>
                             <figcaption class="rb-caption">ด้านหลัง</figcaption>
@@ -381,10 +398,10 @@
                         <div class="project-img-wrapper">
                             <div class="project-img-placeholder">
                                 <div class="cctv-slider">
-                                    <img src="../img/cctv_project/cctv_index.png" alt="">
-                                    <img src="../img/cctv_project/cctv_dashboard.png" alt="">
-                                    <img src="../img/cctv_project/cctv_camera.png" alt="">
-                                    <img src="../img/cctv_project/cctv_report.png" alt="">
+                                    <img src="img/cctv_project/cctv_index.png" alt="">
+                                    <img src="img/cctv_project/cctv_dashboard.png" alt="">
+                                    <img src="img/cctv_project/cctv_camera.png" alt="">
+                                    <img src="img/cctv_project/cctv_report.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -410,7 +427,7 @@
                     <div class="project-card">
                         <div class="project-img-wrapper">
                             <div class="project-img-placeholder">
-                                <img src="../img/eatforfit_project/Screenshot 2026-08-14 182234.png" alt="EatForFit">
+                                <img src="img/eatforfit_project/Screenshot 2026-08-14 182234.png" alt="EatForFit">
                             </div>
                         </div>
                         <div class="project-info">
@@ -568,13 +585,13 @@
                     อันดับที่ 4 คะแนน 85.66 ระดับเหรียญทอง</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery gallery-spaced">
-                    <img src="../img/chin65-1.png" alt="พูดภาษาจีน65">
-                    <img src="../img/chin65-2.png" alt="พูดภาษาจีน65">
-                    <img src="../img/chin65-3.png" alt="พูดภาษาจีน65">
+                    <img src="img/chin65-1.png" alt="พูดภาษาจีน65">
+                    <img src="img/chin65-2.png" alt="พูดภาษาจีน65">
+                    <img src="img/chin65-3.png" alt="พูดภาษาจีน65">
                 </div>
                 <div class="event-gallery">
-                    <img src="../img/chin65-0.jpg" alt="พูดภาษาจีน65">
-                    <img src="../img/cer_Chin1.png" alt="พูดภาษาจีน65">
+                    <img src="img/chin65-0.jpg" alt="พูดภาษาจีน65">
+                    <img src="img/cer_Chin1.png" alt="พูดภาษาจีน65">
                 </div>
             </section>
 
@@ -586,8 +603,8 @@
                     2567</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery">
-                    <img src="../img/trainCCTV.png" alt="อบรมกล้องวงจรปิด">
-                    <img src="../img/trainCCTV2.png" alt="อบรมกล้องวงจรปิด">
+                    <img src="img/trainCCTV.png" alt="อบรมกล้องวงจรปิด">
+                    <img src="img/trainCCTV2.png" alt="อบรมกล้องวงจรปิด">
                 </div>
             </section>
 
@@ -598,9 +615,9 @@
                 <p>เล่นดนตรีกิจกรรมวันปีใหม่ แผนกเทคโนโลยีสารสนเทศ วันที่ 23 ธันวาคม 2567</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery">
-                    <img src="../img/concert2568-1-.png" alt="เล่นดนตรีปีใหม่">
-                    <img src="../img/concert2568-2.jpg" alt="เล่นดนตรีปีใหม่">
-                    <img src="../img/concert2568-3.jpg" alt="เล่นดนตรีปีใหม่">
+                    <img src="img/concert2568-1-.png" alt="เล่นดนตรีปีใหม่">
+                    <img src="img/concert2568-2.jpg" alt="เล่นดนตรีปีใหม่">
+                    <img src="img/concert2568-3.jpg" alt="เล่นดนตรีปีใหม่">
                 </div>
             </section>
 
@@ -611,11 +628,11 @@
                 <p>จิตอาสาเก็บขยะน้ำท่วม วันที่ 11 ธันวาคม 2568</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery gallery-spaced">
-                    <img src="../img/soldier1.jpg" alt="จิตอาสา">
-                    <img src="../img/soldier2.jpg" alt="จิตอาสา">
+                    <img src="img/soldier1.jpg" alt="จิตอาสา">
+                    <img src="img/soldier2.jpg" alt="จิตอาสา">
                 </div>
                 <div class="event-gallery gallery-centered">
-                    <img src="../img/me2.jpg" alt="จิตอาสา" class="img-fixed-320">
+                    <img src="img/me2.jpg" alt="จิตอาสา" class="img-fixed-320">
                 </div>
             </section>
 
@@ -626,13 +643,13 @@
                 <p>งานแข่งขันทักษะกล่าวสุนทรพจน์ภาษาจีน ที่วิทยาลัยอาชีวศึกษาสงขลา วันที่ 23 ธันวาคม 2568</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery gallery-spaced">
-                    <img src="../img/chin68-1.jpg" alt="พูดภาษาจีน68">
-                    <img src="../img/chin68-2.jpg" alt="พูดภาษาจีน68">
-                    <img src="../img/chin68-3.jpg" alt="พูดภาษาจีน68">
+                    <img src="img/chin68-1.jpg" alt="พูดภาษาจีน68">
+                    <img src="img/chin68-2.jpg" alt="พูดภาษาจีน68">
+                    <img src="img/chin68-3.jpg" alt="พูดภาษาจีน68">
                 </div>
                 <div class="event-gallery">
-                    <img src="../img/chin68-0.jpg" alt="พูดภาษาจีน68">
-                    <img src="../img/cer_Chin2.jpg" alt="เกียรติบัตร">
+                    <img src="img/chin68-0.jpg" alt="พูดภาษาจีน68">
+                    <img src="img/cer_Chin2.jpg" alt="เกียรติบัตร">
                 </div>
             </section>
 
@@ -643,10 +660,10 @@
                 <p>งานแข่งขันทักษะกล่าวสุนทรพจน์ภาษาจีน ที่มหาวิทยาลัยสงขลานครินทร์ วันที่ 17 มกราคม 2569</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery gallery-spaced">
-                    <img src="../img/chin68-4m.jpg" alt="พูดภาษาจีน68">
+                    <img src="img/chin68-4m.jpg" alt="พูดภาษาจีน68">
                 </div>
                 <div class="event-gallery">
-                    <img src="../img/cer_Chin3.png" alt="เกียรติบัตร">
+                    <img src="img/cer_Chin3.png" alt="เกียรติบัตร">
                 </div>
             </section>
 
@@ -657,12 +674,12 @@
                 <p>อ่านภาษาอังกฤษวันละคำหน้าเสาธง</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery gallery-spaced">
-                    <img src="../img/eng.jpg" alt="หน้าเสาธง">
-                    <img src="../img/eng1.jpg" alt="หน้าเสาธง">
-                    <img src="../img/eng2.jpg" alt="หน้าเสาธง">
+                    <img src="img/eng.jpg" alt="หน้าเสาธง">
+                    <img src="img/eng1.jpg" alt="หน้าเสาธง">
+                    <img src="img/eng2.jpg" alt="หน้าเสาธง">
                 </div>
                 <div class="event-gallery">
-                    <img src="../img/cer_Eng.png" alt="เกียรติบัตร">
+                    <img src="img/cer_Eng.png" alt="เกียรติบัตร">
                 </div>
             </section>
 
@@ -680,8 +697,8 @@
                 <p>พูดต้อนรับกรรมการประเมินสถานศึกษา วันที่ 29 เมษายน 2569</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery">
-                    <img src="../img/chin_welcome1.jpg" alt="พูดต้อนรับ">
-                    <img src="../img/chin_welcome2.jpg" alt="พูดต้อนรับ">
+                    <img src="img/chin_welcome1.jpg" alt="พูดต้อนรับ">
+                    <img src="img/chin_welcome2.jpg" alt="พูดต้อนรับ">
                 </div>
             </section>
 
@@ -693,12 +710,12 @@
                     2569</p>
                 <div class="gap-space"></div>
                 <div class="event-gallery">
-                    <img src="../img/fenglish_v-net1.jpg" alt="V-NET">
-                    <img src="../img/english_v-net1.jpg" alt="V-NET">
-                    <img src="../img/fenglish_v-net2.jpg" alt="V-NET">
-                    <img src="../img/english_v-net2.jpg" alt="V-NET">
-                    <img src="../img/english_v-net3.jpg" alt="V-NET">
-                    <img src="../img/english_v-net4.jpg" alt="V-NET">
+                    <img src="img/fenglish_v-net1.jpg" alt="V-NET">
+                    <img src="img/english_v-net1.jpg" alt="V-NET">
+                    <img src="img/fenglish_v-net2.jpg" alt="V-NET">
+                    <img src="img/english_v-net2.jpg" alt="V-NET">
+                    <img src="img/english_v-net3.jpg" alt="V-NET">
+                    <img src="img/english_v-net4.jpg" alt="V-NET">
                 </div>
             </section>
         </section>
@@ -707,26 +724,24 @@
             <header>
                 <h1>Certificate</h1>
             </header>
-
-            <div class="cert-stack">
-                <div class="cert-row">
-                    <section class="event-card section cert-card-full">
+            <div class="cer-stack">
+                <div class="cer-row">
+                    <section class="event-card section cer-card-full">
                         <div class="event-desc">
                             <h2>เกียรติบัตรที่ได้รับ</h2>
                         </div>
                         <div class="event-gallery">
-                            <img src="../img/cer_Chin1.png" alt="เกียรติบัตรพูดภาษาจีน">
-                            <img src="../img/cer_Science.png" alt="เกียรติบัตรวิทยาศาสตร์">
-                            <img src="../img/cer_Chin2.jpg" alt="เกียรติบัตรพูดภาษาจีน">
-                            <img src="../img/cer_Eng.png" alt="เกียรติบัตรภาษาอังกฤษ">
-                            <img src="../img/cer_Chin3.png" alt="เกียรติบัตรพูดภาษาจีน">
+                            <img src="img/" alt="">
                         </div>
                     </section>
                 </div>
             </div>
+                    <!-- <img src="img/cer_Chin1.png" alt="เกียรติบัตรพูดภาษาจีน">
+                    <img src="img/cer_Science.png" alt="เกียรติบัตรวิทยาศาสตร์">
+                    <img src="img/cer_Chin2.jpg" alt="เกียรติบัตรพูดภาษาจีน">
+                    <img src="img/cer_Eng.png" alt="เกียรติบัตรภาษาอังกฤษ">
+                    <img src="img/cer_Chin3.png" alt="เกียรติบัตรพูดภาษาจีน"> -->
         </section>
-
-
     </main>
 
     <div class="lightbox" id="rb-lightbox" aria-hidden="true" role="dialog" aria-modal="true"
@@ -736,7 +751,7 @@
             <button type="button" class="lightbox-close" data-close aria-label="ปิดรูป">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <img class="lightbox-img" id="rb-lightbox-img" src="../img/rb_front.jpg" alt="ใบรบ.ฉบับเต็ม">
+            <img class="lightbox-img" id="rb-lightbox-img" src="img/rb_front.jpg" alt="ใบรบ.ฉบับเต็ม">
             <figcaption class="lightbox-caption" id="rb-lightbox-caption">ใบรบ. — ด้านหน้า</figcaption>
         </figure>
     </div>
