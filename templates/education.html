@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tanapong | Education</title>
+    <link rel="icon" type="image/png" href="../img/port_icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/education.css">
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/education.js" defer></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="edu-header">
+        <h1>EDUCATION</h1>
+        <div class="edu-pill">ประวัติการศึกษา</div>
+    </div>
+
+    <main class="main-content edu-main">
+        <div class="timeline-wrap">
+            <div class="timeline-line"></div>
+
+            <div class="edu-item">
+                <div class="edu-badge">
+                    <img src="../img/jvs_logo.png" alt="JVS">
+                </div>
+                <div class="edu-body">
+                    <span class="edu-level">อนุบาลปีที่ 1 - 3</span>
+                    <div class="edu-card" msg-active="ประถมศึกษา">
+                        <h3>โรงเรียนแจ้งวิทยา</h3>
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2555 - 2557</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-badge">
+                    <img src="../img/jvs_logo.png" alt="JVS">
+                </div>
+                <div class="edu-body">
+                    <span class="edu-level">ประถมศึกษาปีที่ 1 - 6</span>
+                    <div class="edu-card" msg-active="ประถมศึกษา">
+                        <h3>โรงเรียนแจ้งวิทยา</h3>
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2558 - 2563</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-badge">
+                    <img src="../img/jvs_logo.png" alt="JVS">
+                </div>
+                <div class="edu-body">
+                    <span class="edu-level">มัธยมศึกษาปีที่ 1 - 3</span>
+                    <div class="edu-card" msg-active="มัธยมศึกษา">
+                        <h3>โรงเรียนแจ้งวิทยา</h3>
+                        <p class="edu-meta">สายศิลป์ภาษาอังกฤษ-จีน</p>
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2564 - 2566</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-item edu-item-last">
+                <div class="edu-badge">
+                    <img src="../img/htc_logo.png" alt="HTC">
+                    <i class="fa-solid fa-graduation-cap is-hidden"></i>
+                </div>
+                <div class="edu-body">
+                    <span class="edu-level">ประกาศนียบัตรวิชาชีพ (ปวช.)</span>
+                    <div class="edu-card" msg-active="ปวช.">
+                        <h3>วิทยาลัยเทคนิคหาดใหญ่</h3>
+                        <p class="edu-meta">สาขาเทคโนโลยีสารสนเทศ สาขางานการโปรแกรมคอมพิวเตอร์ เว็บและอุปกรณ์เคลื่อนที่</p>
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2567 - ปัจจุบัน | GPAX 3.80</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rb-section">
+            <div class="rb-head">
+                <span class="edu-pill">ใบรบ.หน้า-หลัง</span>
+            </div>
+            <p class="rb-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> คลิกที่รูปเพื่อดูฉบับเต็ม</p>
+            <div class="rb-grid">
+                <figure class="rb-card">
+                    <button type="button" class="rb-zoom-btn" data-full="../img/rb_front.png" data-caption="ใบรบ. — ด้านหน้า" aria-label="ขยายรูปใบรบ.ด้านหน้า">
+                        <img src="../img/rb_front.png" alt="ใบรบ.หนัา">
+                        <span class="rb-zoom-badge"><i class="fa-solid fa-expand"></i></span>
+                    </button>
+                </figure>
+                <figure class="rb-card">
+                    <button type="button" class="rb-zoom-btn" data-full="../img/rb_back.png" data-caption="ใบรบ. — ด้านหลัง" aria-label="ขยายรูปใบรบ.ด้านหลัง">
+                        <img src="../img/rb_back.png" alt="ใบรบ.หลัง">
+                        <span class="rb-zoom-badge"><i class="fa-solid fa-expand"></i></span>
+                    </button>
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <div class="lightbox" id="rb-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="ดูรูปใบรบ.ฉบับเต็ม">
+        <div class="lightbox-backdrop" data-close></div>
+        <figure class="lightbox-box">
+            <img class="lightbox-img" id="rb-lightbox-img" src="../img/rb_front.png" alt="ใบรบ.ฉบับเต็ม">
+        </figure>
+    </div>
+</body>
+
+</html>

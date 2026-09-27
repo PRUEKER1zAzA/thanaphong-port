@@ -1,0 +1,457 @@
+/* หน้า Education อย่างเดียว — ห้าม style="" ใน HTML ให้ใช้คลาสด้านล่างนี้ */
+
+.edu-main {
+    min-height: auto;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.edu-header {
+    background: #0b0f19;
+    background-image: radial-gradient(circle at 50% 30%, rgba(59, 130, 246, 0.12), transparent 60%);
+    padding: 70px 20px 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.edu-header h1 {
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    background: linear-gradient(#ffffff 0%, #a5f3fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 18px;
+}
+
+.edu-container {
+    background-color: var(--bg-secondary);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease;
+}
+
+.edu-pill {
+    display: inline-block;
+    background: #fff;
+    color: #0a0f1d;
+    padding: 10px 36px;
+    border-radius: 50px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.edu-sub {
+    margin-top: 14px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.timeline-wrap {
+    max-width: 860px;
+    margin: 50px auto 60px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 62px;
+    top: 20px;
+    bottom: 20px;
+    width: 6px;
+    background: linear-gradient(180deg, #334155, #1e293b);
+    border-radius: 999px;
+}
+
+.edu-item {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 38px;
+    align-items: flex-start;
+}
+
+.edu-item-last {
+    margin-bottom: 0;
+}
+
+.edu-badge {
+    flex-shrink: 0;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: #2a3441;
+    border: 4px solid #3a4556;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.edu-badge img {
+    width: 82%;
+    height: 82%;
+    object-fit: contain;
+    border-radius: 100%;
+    background: #fff;
+    padding: 6px;
+}
+
+.edu-badge i {
+    font-size: 32px;
+    color: #e2e8f0;
+}
+
+.edu-body {
+    flex: 1;
+    min-width: 0;
+    padding-top: 6px;
+}
+
+.edu-level {
+    display: inline-block;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.edu-card {
+    background: #ffffff;
+    color: #1e293b;
+    border-radius: 16px;
+    padding: 18px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 78px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+}
+
+.edu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+.edu-card h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0;
+    color: #0f172a;
+}
+
+.edu-card .edu-meta {
+    font-size: 0.88rem;
+    color: #475569;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.edu-card .edu-year {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    background: #f1f5f9;
+    color: #334155;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.edu-card .edu-year i {
+    font-size: 0.75rem;
+    color: #3b82f6;
+}
+
+.edu-card .edu-gpax {
+    position: absolute;
+    top: -10px;
+    right: 22px;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: white;
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 5px 14px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.edu-card.is-current {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #f1f5f9;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 24px;
+    padding: 22px 28px;
+}
+
+.edu-card.is-current h3 {
+    color: #fff;
+    font-size: 1.18rem;
+}
+
+.edu-card.is-current .edu-meta {
+    color: #94a3b8;
+}
+
+.edu-card.is-current .edu-year {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.edu-badge.is-current {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.15), 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.edu-badge.is-current i {
+    color: white;
+}
+
+/* ส่วนใบรบ. หน้า-หลัง */
+.rb-section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    text-align: center;
+}
+
+.rb-head {
+    margin-bottom: 20px;
+}
+
+.rb-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.rb-card {
+    margin: 0;
+    flex: 1 1 300px;
+    max-width: 330px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+.rb-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.rb-caption {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.rb-hint {
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.rb-hint i {
+    color: var(--accent-cyan);
+    margin-right: 6px;
+}
+
+/* ปุ่มครอบรูป — ทำให้ทั้งการ์ดคลิกได้โดยไม่ใช้ style="" */
+.rb-zoom-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+
+.rb-zoom-btn img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.rb-zoom-btn:hover img,
+.rb-zoom-btn:focus-visible img {
+    transform: scale(1.03);
+}
+
+.rb-zoom-btn:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+}
+
+.rb-zoom-badge {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(10, 15, 29, 0.75);
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    pointer-events: none;
+}
+
+/* Lightbox รูปฉบับเต็ม */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.lightbox.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 6, 17, 0.85);
+    backdrop-filter: blur(6px);
+}
+
+.lightbox-box {
+    position: relative;
+    margin: 0;
+    max-width: min(920px, 94vw);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: #0f172a;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+    transform: translateY(12px) scale(0.98);
+    transition: transform 0.25s ease;
+}
+
+.lightbox.open .lightbox-box {
+    transform: none;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 72vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.lightbox-caption {
+    margin-top: 12px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    transition: transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.08);
+}
+
+.body-locked {
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .timeline-line {
+        left: 36px;
+        width: 4px;
+    }
+
+    .edu-badge {
+        width: 62px;
+        height: 62px;
+        border-width: 3px;
+    }
+
+    .edu-badge i {
+        font-size: 20px;
+    }
+
+    .edu-level {
+        font-size: 0.8rem;
+    }
+
+    .edu-card {
+        border-radius: 24px;
+        padding: 16px 20px;
+        min-height: auto;
+    }
+
+    .edu-card h3 {
+        font-size: 0.98rem;
+    }
+}

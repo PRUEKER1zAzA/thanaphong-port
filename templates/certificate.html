@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Thanaphong | Certificate</title>
+    <link rel="icon" type="image/png" href="../img/port_icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/navbar.js" defer></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="display" class="active-box">
+        ปีการศึกษา 2565
+    </div>
+
+    <main class="main-content">
+        <header>
+            <h1>Certificate</h1>
+        </header>
+
+        <div style="display: flex; flex-direction: column; gap: 50px; width: 100%;">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding: 0 20px;">
+                <section class="event-card section" msg-active="ปีการศึกษา 2565" style="width: 100%; margin: 0;">
+                    <div class="event-desc">
+                        <h2>เกียรติบัตรที่ได้รับ</h2>
+                    </div>
+                    <div class="event-gallery">
+                        <img src="../img/cer_Chin1.png" alt="เกียรติบัตรพูดภาษาจีน">
+                        <img src="../img/cer_Science.png" alt="เกียรติบัตรวิทยาศาสตร์">
+                        <img src="../img/cer_Chin2.jpg" alt="เกียรติบัตรพูดภาษาจีน">
+                        <img src="../img/cer_Eng.png" alt="เกียรติบัตรภาษาอังกฤษ">
+                        <img src="../img/cer_Chin3.png" alt="เกียรติบัตรพูดภาษาจีน">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const displayBox = document.getElementById('display');
+            const sections = document.querySelectorAll('section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -70% 0px',
+                threshold: 0
+            };
+
+            const scrollObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const level = entry.target.getAttribute('msg-active');
+                        displayBox.innerText = `${level}`;
+                        displayBox.classList.add('active-hover');
+                        setTimeout(() => {
+                            displayBox.classList.remove('active-hover');
+                        }, 400);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(sec => scrollObserver.observe(sec));
+        });
+    </script>
+</body>
+
+</html>

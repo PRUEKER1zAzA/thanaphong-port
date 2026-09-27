@@ -1,0 +1,404 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            @keyframes move {
+        0% {
+            transform: rotate(-3deg);
+        }
+
+        50% {
+            transform: rotate(3deg);
+        }
+
+        100% {
+            transform: rotate(-3deg);
+        }
+    }
+
+    @keyframes up-down {
+        0% {
+            transform: translateY(10px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(10px);
+        }
+    }
+
+    @keyframes left-right {
+        0% {
+            transform: translateX(10px);
+        }
+
+        50% {
+            transform: translateX(-10px);
+        }
+
+        100% {
+            transform: translateX(10px);
+        }
+    }
+
+    .picture-frame {
+        background-color: #ffffff;
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+        transition: transform 0.8s ease;
+        animation: up-down 10s ease-in-out infinite;
+    }
+
+    .picture-profile {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        overflow: hidden;
+        border: 4px solid #eeeeee;
+        box-shadow: 0 0 15px #4F78A8;
+        transition: transform 0.8s ease
+    }
+
+    .picture-profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 5%;
+    }
+
+    .picture-frame:hover,
+    .picture-profile:hover {
+        box-shadow: 0 0 30px #4F78A8;
+        transform: translateY(-5px);
+        transition: 0.8s;   
+    }
+
+    /* Container */
+    .profile-txt {
+        gap: 10px;
+        flex-direction: column;
+        display: flex;
+        text-align: left;
+        transition: transform 0.8s ease;
+        line-height: 1.5;
+    }
+
+    .profile-txt h1 {
+        font-size: 120px;
+        text-shadow: 1px 1px #4F78A8,
+            2px 2px #4F78A8,
+            3px 3px #4F78A8,
+            4px 4px #4F78A8,
+            5px 5px #4F78A8;
+
+    }
+
+    .profile-txt h1 {
+        animation: up-down 10s ease-in-out infinite;
+    }
+
+    .profile-txt p {
+        color: #eeeeee;
+    }
+
+    .profile-txt:hover {
+        transform: translateY(-5px);
+        transition: 0.8s;
+    }
+
+    .profile-txt span {
+        transition: transform 0.8s ease;
+        transition: 0.8s;
+        
+    }
+
+    .profile-txt span:hover {
+        transform: translateY(-5px);
+        transition: 0.8s;
+    }
+
+    .btn-project {
+        width: auto;
+        color: #eeeeee;
+        background-color: #2F4A7F;
+        border: 3px solid #2F4A7F;
+        border-radius: 8px;
+        padding: 14px 24px;
+        font-size: 18px;
+        animation: move 5s ease-in-out infinite;
+    }
+
+    .btn-project:hover {
+        color: #dddddd;
+        background-color: #4F78A8;
+        border: 3px solid #4F78A8;
+        transition: 0.8s;
+        animation: none
+    }
+
+    .btn-contact {
+        width: auto;
+        color: #eeeeee;
+        background-color: transparent;
+        border: 3px solid #333333;
+        border-radius: 8px;
+        padding: 14px 24px;
+        font-size: 18px;
+    }
+
+    .btn-contact:hover{
+        color: #dddddd;
+        background-color: #222222;
+        border: 3px solid #333333;
+        transition: 0.8s;
+    }
+
+    .decorate-code {
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0.4;
+        margin-bottom: 100px;
+        box-shadow:0 0 20px rgba(37,99,235,0.3);
+    }
+        </style>
+
+        <body>
+        <nav>
+            <a href="index.html" style="text-decoration: none;">
+                <h2>Portfolio</h2>
+            </a>
+
+            <ul>
+                <li class="menu">
+                    <a href="index.html" class="active">Home</a>
+
+                    <ul class="dropbar">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                    </ul>
+                </li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+                <li><a href="sop.html">SOP</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="picture-frame">
+                <div class="picture-profile">
+                    <img src="img/me1.jpg">
+                </div>
+            </div>
+            <div class="profile-txt" style="display: flex; gap: 30px;">
+                <div style="text-align: center; opacity: 0.5;">
+                    <span style="color: #60a5fa;">print<span style="color: #34d399;"><span
+                                style="color: #ffffff;">(</span>"Hello World"<span
+                                style="color: #ffffff;">)</span></span></span>
+                </div>
+                <div>
+                    <h1>Portfolio</h1>
+                    <p>วิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร</p>
+                    <p>Bachelor of Science (Information and Communication Technology)</p>
+                    <p></p>
+                </div>
+                <div>
+                    <a href="projects.html"><button class="btn-project">View Projects →</button></a>
+                    <a href="contact.html"><button class="btn-contact">Contact Me →</button></a>
+                </div>
+            </div>
+            <div class="profile-txt">
+                <div style="display: flex;">
+                    <span class="decorate-code">
+                        <span style="color:#60a5fa;">function <span style="color:#ffffff;">dev_skill() {</span></span>
+                        <span style="color:#60a5fa;"> let <span style="color:#ffffff;">skills = [</span></span>
+                        <span style="color:#34d399;"> "HTML"<span style="color:#ffffff;">,</span></span>
+                        <span style="color:#34d399;"> "CSS"<span style="color:#ffffff;">,</span></span>
+                        <span style="color:#34d399;"> "JavaScript"<span style="color:#ffffff;">,</span></span>
+                        <span style="color:#34d399;"> "Python"<span style="color:#ffffff;">,</span></span><span>];</span>
+                        <span style="color:#60a5fa;"> return <span
+                                style="color:#ffffff;">skills;</span></span><span>};</span>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <section id="about">
+                <div style="display: flex; gap: 40px; flex-wrap: wrap; justify-content: center;">
+                    <div class="about-container">
+                        <div style="display: flex; gap: 40px;">
+                            <div class="content">
+                                <div style="margin-bottom: 30px;">
+                                    <h2 style="margin-bottom: 8px;">ประวัติส่วนตัว</h2>
+                                    <p>ชื่อ-สกุล : นายธนพงษ์ ขุนบำรุง</p>
+                                    <p>ชื่อเล่น : พฤกษ์</p>
+                                    <p>เกิดวันที่ : 11 พฤษภาคม 2552</p>
+                                    <p>อายุ : 17 ปี</p>
+                                    <p>สัญชาติ : ไทย</p>
+                                </div>
+                                <div>
+                                    <h2 style="margin-bottom: 8px;">ข้อมูลครอบครัว</h2>
+                                    <p>บิดา : นายพิเชษฐ์ ขุนบำรุง</p>
+                                    <p>อาชีพ : ข้าราชการ</p>
+                                    <p>เบอร์โทรศัพท์ : 0865982790</p>
+                                    <p>มารดา : พรพิมล ขุนบำรุง</p>
+                                    <p>อาชีพ : พนักงานข้าราชการ</p>
+                                    <p>เบอร์โทรศัพท์ : 0869586387</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="content">
+                                <h2 style="margin-bottom: 8px;">งานอดิเรก</h2>
+
+                                <div class="about-icon">
+                                    <img src="img/guitar_icon.png" alt="">
+                                    <img src="img/exercise_icon.png" alt="">
+                                    <img src="img/spotify_icon.png" alt="">
+                                </div>
+                                <div style="margin-top: 8px;">
+                                    <p>เล่นกีต้าร์</p>
+                                    <p>ออกกำลังกาย</p>
+                                    <p>ฟังเพลง / ดูอนิเมะ</p>
+                                </div>
+                                <div style="visibility: hidden;">-</div>
+
+                                <h2>ติดต่อ</h2>
+                                <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                                    <div class="contact-item">
+                                        <img src="img/phone.png" alt="" class="contact-icon">
+                                        <p>0842476460</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <img src="img/email.png" alt="" class="contact-icon">
+                                        <p>67219010017@htc.ac.th</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <img src="img/line.png" alt="" class="contact-icon">
+                                        <p>0842476460</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <img src="img/fb.png" alt="" class="contact-icon">
+                                        <p>Pruek Ker</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <img src="img/ig.jpg" alt="" class="contact-icon">
+                                        <p>@prueker1zaza</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="skills-container">
+                    <div class="content">
+                        <h2 style="margin-bottom: 12px;">Dev Skills</h2>
+                        <div style="flex-direction: column; align-items: center;">
+                            <div class="skill-item">
+                                <div class="about-icon">
+                                    <img src="img/html_logo.png">
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 80%;"></div>
+                                </div>
+                                <h3>80%</h3>
+                                <p>Advanced</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="about-icon">
+                                    <img src="img/css_logo.png">
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 70%;"></div>
+                                </div>
+                                <h3>70%</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="about-icon">
+                                    <img src="img/js_logo.png">
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 40%;"></div>
+                                </div>
+                                <h3>40%</h3>
+                                <p>Beginner</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="about-icon">
+                                    <img src="img/py_logo.png">
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 60%;"></div>
+                                </div>
+                                <h3>60%</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="about-icon">
+                                    <img src="img/ux-ui_logo.png">
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 60%;"></div>
+                                </div>
+                                <h3>60%</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h2 style="margin-bottom: 12px;">Tool</h2>
+                        <div style="flex-direction: column; align-items: center;">
+                            <div class="skill-item">
+                                <img src="img/canva_logo.png" class="skill-icon">
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 70%;"></div>
+                                </div>
+                                <h3>70%</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/vscode_logo.jpg" class="skill-icon">
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 70%;"></div>
+                                </div>
+                                <h3>70%</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/github_logo.svg" class="skill-icon">
+                                <div class="skill-bar">
+                                    <div class="lv-skill" style="width: 50%;"></div>
+                                </div>
+                                <h3>50%</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </body>
+    </html>

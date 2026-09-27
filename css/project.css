@@ -1,0 +1,199 @@
+.projects-container {
+    background-color: var(--bg-secondary);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.3);
+}
+
+.projects-container h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: left;
+    border-left: 4px solid var(--accent-blue);
+    padding-left: 14px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
+}
+
+.project-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.project-img-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-blue);
+    font-size: 40px;
+    gap: 10px;
+}
+
+.project-img-placeholder span {
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.project-img-placeholder {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cctv-slider {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.cctv-slider img {
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    background-color: rgba(6, 182, 212, 0.1);
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-btn.primary {
+    background-color: var(--accent-blue);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.project-btn.primary:hover {
+    background-color: #2563eb;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35);
+    transform: translateY(-1px);
+}
+
+.project-btn.secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-btn.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        padding: 24px;
+    }
+    
+    .projects-grid {
+        gap: 20px;
+    }
+}
